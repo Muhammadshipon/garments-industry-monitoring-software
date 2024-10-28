@@ -9,7 +9,7 @@ const Navbar = () => {
   const {searchTerm,setSearchTerm} =useContext(SearchContext);;
   
   return (
-    <div className="navbar bg-base-100 w-full px-8 shadow-xl border-b-2">
+    <div className="navbar bg-base-100 w-full px-8  border-b-2">
     <div className="flex-1">
     <div className="form-control relative ">
       <span className="absolute text-xl text-gray-500 top-3 left-4"><FaSearch /></span>

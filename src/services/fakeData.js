@@ -124,3 +124,30 @@ export const getInventoryItems =()=>{
   return Items;
   
 } 
+
+export const getSupplierInfo = ()=>{
+  const suppliers = [
+    { id: "1", name: "Sophia Anderson", email: "sophia.anderson@example.com", phone: "123-456-7890", address: "123 Maple Street, Springfield" },
+    { id: "2", name: "Liam Johnson", email: "liam.johnson@example.com", phone: "098-765-4321", address: "456 Oak Avenue, Metropolis" },
+    { id: "3", name: "Emma Thompson", email: "emma.thompson@example.com", phone: "555-555-5555", address: "789 Pine Road, Gotham" },
+    { id: "4", name: "Noah Williams", email: "noah.williams@example.com", phone: "234-567-8901", address: "321 Birch Boulevard, Star City" },
+    { id: "5", name: "Olivia Martinez", email: "olivia.martinez@example.com", phone: "987-654-3210", address: "654 Cedar Lane, Central City" },
+    { id: "6", name: "James Brown", email: "james.brown@example.com", phone: "111-222-3333", address: "987 Willow Court, Riverdale" },
+    { id: "7", name: "Mia Garcia", email: "mia.garcia@example.com", phone: "222-333-4444", address: "456 Elm Street, Smallville" },
+    { id: "8", name: "Benjamin Taylor", email: "benjamin.taylor@example.com", phone: "333-444-5555", address: "123 Oakwood Avenue, Springfield" },
+    { id: "9", name: "Charlotte Moore", email: "charlotte.moore@example.com", phone: "444-555-6666", address: "789 Park Lane, Starling City" },
+    { id: "10", name: "William Harris", email: "william.harris@example.com", phone: "555-666-7777", address: "321 Kings Road, Central City" },
+    { id: "11", name: "Amelia Clark", email: "amelia.clark@example.com", phone: "666-777-8888", address: "654 Main Street, Gotham" },
+    { id: "12", name: "Ethan Walker", email: "ethan.walker@example.com", phone: "777-888-9999", address: "987 Broadway, Metropolis" },
+    { id: "13", name: "Harper Scott", email: "harper.scott@example.com", phone: "888-999-0000", address: "321 Ridge Avenue, Riverdale" },
+    { id: "14", name: "Mason Young", email: "mason.young@example.com", phone: "999-000-1111", address: "654 Highland Road, Star City" },
+    { id: "15", name: "Isabella King", email: "isabella.king@example.com", phone: "000-111-2222", address: "123 Waterfall Lane, Gotham" },
+    { id: "16", name: "Lucas Wright", email: "lucas.wright@example.com", phone: "111-222-3334", address: "456 Greenway Drive, Springfield" },
+    { id: "17", name: "Mila Hill", email: "mila.hill@example.com", phone: "222-333-4445", address: "789 Oak Grove, Smallville" },
+    { id: "18", name: "Henry Lopez", email: "henry.lopez@example.com", phone: "333-444-5556", address: "321 Sunset Boulevard, Metropolis" },
+    { id: "19", name: "Ella Adams", email: "ella.adams@example.com", phone: "444-555-6667", address: "654 Woodside Street, Starling City" },
+    { id: "20", name: "Alexander Perez", email: "alexander.perez@example.com", phone: "555-666-7778", address: "987 Oak Hill Drive, Central City" },
+  ];
+  
+  return suppliers;
+}

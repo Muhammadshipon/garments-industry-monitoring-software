@@ -8,11 +8,11 @@ import { IoSettingsSharp } from "react-icons/io5"
 import { ImExit } from "react-icons/im";
 const Sidebar = () => {
   return (
-    <aside className='h-[100%] -r-2 shadow-xl '>
+    <aside className='h-[100%] border-r '>
       <h1 className='text-4xl font-bold text-blue-700 text-center p-3 pb-4 font-serif italic active:scale-105'>Inventify</h1>
       {/* menu section  */}
       <section className='flex flex-col justify-between h-[90%]'>
-     <div  className='border-2'>
+     <div  className=''>
      <Link href='/'>
       <div className='flex justify-start items-center gap-2 px-10 py-2  hover:text-blue-700  hover:bg-blue-200 text-gray-500 active:scale-95'>
         <span className='font-bold text-xl'><RiDashboardLine /></span>
