@@ -1,7 +1,6 @@
 'use client'
 import React, { useContext, useState } from 'react';
 import InventoryTable from '../components/inventory/InventoryTable';
-import { getInventoryItems } from '@/services/inventoryItems';
 import UpdateModal from '../components/inventory/updateItemModal';
 import ViewDetailsModal from '../components/inventory/viewDetailsModal';
 import { useRouter } from 'next/navigation';
@@ -11,8 +10,7 @@ import { SearchContext } from '../provider/SearchTermProvider';
 
 const InventoryPage = () => {
   const router = useRouter();
-  const data = getInventoryItems();
-  const {searchTerm,setSearchTerm} =useContext(SearchContext);
+  const {searchTerm,setSearchTerm,data} =useContext(SearchContext);
   const [modalData, setModalData] = useState(null);
   const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
   const [isViewModalOpen, setIsViewModalOpen] = useState(false);
