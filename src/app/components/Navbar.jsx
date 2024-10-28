@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 w-full px-8 shadow-xl">
+    <div className="navbar bg-base-100 w-full px-8 shadow-xl border-b-2">
     <div className="flex-1">
     <div className="form-control relative ">
       <span className="absolute text-xl text-gray-500 top-3 left-4"><FaSearch /></span>
