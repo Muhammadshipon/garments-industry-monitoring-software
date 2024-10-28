@@ -1,7 +1,9 @@
+
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import {SearchTermProvider} from "./provider/SearchTermProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,8 +30,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-             {/* main layout  */}
-       <section className="flex justify-between w-full">
+        <SearchTermProvider>
+           {/* main layout  */}
+        <section className="flex justify-between w-full">
                 {/* sidebar  */}
        <div className="fixed md:w-1/4 h-screen ">
        <Sidebar/>
@@ -43,6 +46,9 @@ export default function RootLayout({ children }) {
       </main>
        </div>
        </section>
+        </SearchTermProvider>
+            
+      
       </body>
     </html>
   );

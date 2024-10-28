@@ -1,13 +1,22 @@
+'use client'
 import Image from "next/image";
+import Link from "next/link";
+import { useContext } from "react";
 import { FaSearch } from "react-icons/fa";
+import { SearchContext } from "../provider/SearchTermProvider";
 
 const Navbar = () => {
+  const {searchTerm,setSearchTerm} =useContext(SearchContext);;
+  
   return (
     <div className="navbar bg-base-100 w-full px-8 shadow-xl border-b-2">
     <div className="flex-1">
     <div className="form-control relative ">
       <span className="absolute text-xl text-gray-500 top-3 left-4"><FaSearch /></span>
-        <input type="text" placeholder="Search anything here..." className="input input-bordered w-32 md:w-auto pl-10" />
+       <Link href='/inventory'>
+       <input  value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)} type="text" placeholder="Search by product name..." className="input input-bordered w-32 md:w-auto pl-10" />
+       </Link>
       </div>
   </div>
     <div className="flex-none gap-2 ">
