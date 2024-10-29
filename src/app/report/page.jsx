@@ -2,14 +2,14 @@
 import React, { useContext } from "react";
 import { PieChart, Pie, Cell, Tooltip, BarChart, Bar, XAxis, YAxis, Legend, ResponsiveContainer } from "recharts";
 import { FaBoxOpen, FaTag } from "react-icons/fa";
-import { SearchContext } from "../provider/SearchTermProvider";
+import { DataContext } from "../provider/DataProvider";
 
 // Sample color scheme for the Pie Chart
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#AF19FF"];
 
 const ReportPage = () => {
   // Aggregate data for the charts
-  const {data} = useContext(SearchContext);
+  const {data} = useContext(DataContext);
   const categoryData = data?.reduce((acc, item) => {
     const existingCategory = acc.find((cat) => cat.name === item.category);
     if (existingCategory) {

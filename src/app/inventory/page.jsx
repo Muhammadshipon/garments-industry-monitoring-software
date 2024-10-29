@@ -5,12 +5,12 @@ import UpdateModal from '../components/inventory/updateItemModal';
 import ViewDetailsModal from '../components/inventory/viewDetailsModal';
 import { useRouter } from 'next/navigation';
 import { MdAddCard } from 'react-icons/md';
-import { SearchContext } from '../provider/SearchTermProvider';
+import { DataContext } from '../provider/DataProvider';
 
 
 const InventoryPage = () => {
   const router = useRouter();
-  const {searchTerm,setSearchTerm,data} =useContext(SearchContext);
+  const {searchTerm,setSearchTerm,data} =useContext(DataContext);
   const [modalData, setModalData] = useState(null);
   const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
   const [isViewModalOpen, setIsViewModalOpen] = useState(false);

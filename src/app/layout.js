@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import {SearchTermProvider} from "./provider/SearchTermProvider";
+import {DataProvider} from "./provider/DataProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SearchTermProvider>
+        <DataProvider>
            {/* main layout  */}
         <section className="flex justify-between w-full">
                 {/* sidebar  */}
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
       </main>
        </div>
        </section>
-        </SearchTermProvider>
+        </DataProvider>
             
       
       </body>

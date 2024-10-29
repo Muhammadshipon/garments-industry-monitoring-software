@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
 import { FaSearch } from "react-icons/fa";
-import { SearchContext } from "../provider/SearchTermProvider";
+import { DataContext } from "../provider/DataProvider";
 
 const Navbar = () => {
-  const {searchTerm,setSearchTerm} =useContext(SearchContext);;
+  const {searchTerm,setSearchTerm} =useContext(DataContext);;
   
   return (
     <div className="navbar bg-base-100 w-full px-8  border-b-2">

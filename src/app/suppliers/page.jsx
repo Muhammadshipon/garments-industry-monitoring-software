@@ -1,12 +1,12 @@
 "use client";
 import React, { useContext } from "react";
-import { SearchContext } from "../provider/SearchTermProvider";
+import { DataContext } from "../provider/DataProvider";
 
 
 
 
 const SupplierPage = () => {
-  const {suppliersInfo} = useContext(SearchContext);
+  const {suppliersInfo} = useContext(DataContext);
   return (
     <div className="container mx-auto p-8 ">
       <h1 className="text-3xl font-bold mb-8 text-center text-gray-700">Supplier Information</h1>

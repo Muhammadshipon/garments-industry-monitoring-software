@@ -2,10 +2,10 @@
 import { v4 as uuidv4 } from 'uuid';
 import React, { useContext, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { SearchContext } from '../provider/SearchTermProvider';
+import { DataContext } from '../provider/DataProvider';
 
 const AddItemPage = () => {
-  const {data,setData} = useContext(SearchContext);
+  const {data,setData} = useContext(DataContext);
   const router = useRouter();
   const [formData, setFormData] = useState({
     productName: '',
